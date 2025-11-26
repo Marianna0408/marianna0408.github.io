@@ -4,9 +4,14 @@ body {
     margin: 0;
     padding: 0;
 
-}
-
+@keyframes mozgass_es_szinezz{ 
+    0%  {left: 0px; }
+    100% {left: 200px; }
 h1, h2, p, a {
+    position: relative;
+    animation-name: mozgass_es_szinezz;
+    animation-duration: 4s;
+}
     color: #000000;
 }
 
