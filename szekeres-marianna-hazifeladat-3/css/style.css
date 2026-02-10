@@ -1,0 +1,98 @@
+/* Alap beállítások */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:#2b2b2b; /* sötétszürke háttér */
+    color: #fff;
+}
+
+/* Fejléc */
+header {
+    background-color: #2b2b2b; /* sötétszürke fejléc*/
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigáció */
+nav ul {
+    list-style-type: none;
+    background-color: #555;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #666;
+    color: #c3bcbc;
+}
+
+/* Page container */
+.page {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2f2f2f;
+}
+
+/* Floatolt kártyák */
+.card-wrapper {
+    margin-bottom: 20px;
+}
+
+.card-column-3 {
+    float: left;
+    width: 31%;
+    margin: 1%;
+    padding: 15px;
+    background-color: #3d3d3d;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.card-column-3 img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Egyéb tartalom (pl. index.html) */
+.content-2 {
+    background-color: #3a3a3a;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+p {
+    line-height: 1.6;          
+    margin-bottom: 20px;      
+    color: #e0e0e0;          
+    text-align: justify;      
+    font-size: 17px;          
+}
+
+/* Float clear */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

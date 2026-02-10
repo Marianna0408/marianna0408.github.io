@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFD4;
+}
+
+/* Középső doboz */
+.container {
+    width: 70%;
+    margin: 20px auto;
+    border: 2px solid brown;
+}
+
+/* FEJLÉC – fix sáv */
+header {
+    background-color: #5fa0d8;
+    height: 200px;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* MENÜ – külön sáv */
+nav {
+    background-color: #FF7F2A;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #BF153F;
+}
+
+/* TARTALOM */
+main {
+    background-color: white;
+    color: #555;
+    padding: 20px;
+    min-height: 400px;
+}
+
+.place {
+    margin-bottom: 40px;
+}
+
+.place img {
+    width: 30%;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.place::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* LÁBLÉC – fix sáv */
+footer {
+    background-color: #5fa0d8;
+    height: 200px;
+}
+
+footer iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
