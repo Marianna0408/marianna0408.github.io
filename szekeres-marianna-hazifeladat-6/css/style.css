@@ -1,0 +1,157 @@
+body {
+margin: 0;
+font-family: 'Roboto', sans-serif;
+font-size: 16px;
+background-color: #d7b520;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    padding: 20px;
+
+}
+
+header {
+    border: 2px solid #4f79a8;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding: 0;
+    overflow: hidden;
+}
+header img {
+     width: 100%;
+     height: auto;
+     display: block;
+     border-radius: 15px;
+}
+
+.content {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+aside { 
+    width: 30%;
+    background-color: #5f8fbe;
+    color: white;
+    border: 2px solid #4f79a8;
+    border-radius: 25px;
+    padding: 15px;
+    flex-shrink: 0;
+}
+
+aside nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+aside nav ul li {
+    margin-bottom: 10px;
+}
+
+aside nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+aside form label {
+    display: block;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+aside form input,
+aside form select,
+aside form textarea,
+aside form button {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+aside form button {
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: #D7B520;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+main {
+   width: 68%;
+   display: flex;
+   flex-direction: column; 
+   gap: 20px;
+}
+
+section {
+    border: 2px solid #4f79a8;
+    border-radius: 25px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+section h2 {
+    margin-top: 0;
+}
+
+section img {
+    float: left;
+    width: 200px;
+    max-width: 40%;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    border: 2px solid #4f79a8;
+}
+
+section::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #ddd;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;   
+}
+
+aside, main {
+       width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin-bottom: 0;
+}
+
+section img {
+    float: none;
+    display: block;
+    margin: 0 auto 15px auto;
+    max-width: 100%;
+}
+}
