@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #eaf7ea;
+}
+
+/* ===== FEJLÉC ===== */
+header {
+    background-color: #6abf69;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* ===== NAVIGÁCIÓ ===== */
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 15px;
+    color: #3d8b40;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: #2e6f32;
+}
+
+/* ===== SZÖVEGES SZEKCIÓ ===== */
+.section {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.section h2 {
+    color: #3d8b40;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* ===== KÁRTYÁK ===== */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* ===== KAPCSOLAT DOBOZ ===== */
+.contact-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #6abf69;
+    color: white;
+    margin-top: 40px;
+}
