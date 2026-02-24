@@ -1,8 +1,8 @@
 body {
-margin: 0;
-font-family: 'Roboto', sans-serif;
-font-size: 16px;
-background-color: #ff0000;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background-color: #D7B520;
 }
 
 .container {
@@ -12,43 +12,47 @@ background-color: #ff0000;
     border: 2px solid #ddd;
     border-radius: 25px;
     padding: 20px;
-
 }
+
+/* HEADER */
 
 header {
     border: 2px solid #4f79a8;
     border-radius: 25px;
-    margin-bottom: 20px;
-    padding: 0;
     overflow: hidden;
 }
+
 header img {
-     width: 100%;
-     height: auto;
-     display: block;
-     border-radius: 15px;
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
 }
+
+/* GRID LAYOUT */
 
 .content {
-    display: flex;
+    display: grid;
+    grid-template-columns: 30% 1fr;
     gap: 20px;
-    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
-aside { 
-    width: 30%;
+/* ASIDE */
+
+aside {
     background-color: #5f8fbe;
     color: white;
     border: 2px solid #4f79a8;
     border-radius: 25px;
     padding: 15px;
-    flex-shrink: 0;
 }
+
+/* NAV */
 
 aside nav ul {
     list-style: none;
     padding: 0;
-    margin: 0 0 20px 0;
 }
 
 aside nav ul li {
@@ -61,37 +65,40 @@ aside nav ul li a {
     font-weight: bold;
 }
 
-aside form label {
+/* FORM */
+
+form label {
     display: block;
     font-style: italic;
     font-size: 1.2em;
     margin-top: 10px;
 }
 
-aside form input,
-aside form select,
-aside form textarea,
-aside form button {
+form input,
+form select,
+form textarea,
+form button {
     width: 100%;
     padding: 6px;
     margin-top: 5px;
     box-sizing: border-box;
 }
 
-aside form button {
+form button {
     margin-top: 15px;
     cursor: pointer;
     background-color: #D7B520;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     font-weight: bold;
 }
 
+/* MAIN */
+
 main {
-   width: 68%;
-   display: flex;
-   flex-direction: column; 
-   gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 section {
@@ -99,10 +106,6 @@ section {
     border-radius: 25px;
     padding: 20px;
     overflow: hidden;
-}
-
-section h2 {
-    margin-top: 0;
 }
 
 section img {
@@ -121,37 +124,37 @@ section::after {
     clear: both;
 }
 
+/* FOOTER */
+
 footer {
     text-align: center;
     padding: 15px;
     border-top: 2px solid #ddd;
-    background-color: #f0f0f0;
     margin-top: 20px;
+    background-color: #f0f0f0;
     border-radius: 15px;
 }
 
+/* RESPONSIVE */
+
 @media (max-width: 768px) {
     .content {
-        flex-direction: column;   
-}
+        grid-template-columns: 1fr;
+    }
 
-aside, main {
-       width: 100%;
-}
+    aside nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
 
-nav ul {
-    display: flex;
-    justify-content: space-around;
-}
+    aside nav ul li {
+        margin-bottom: 0;
+    }
 
-nav ul li {
-    margin-bottom: 0;
-}
-
-section img {
-    float: none;
-    display: block;
-    margin: 0 auto 15px auto;
-    max-width: 100%;
-}
+    section img {
+        float: none;
+        display: block;
+        margin: 0 auto 15px auto;
+        max-width: 100%;
+    }
 }

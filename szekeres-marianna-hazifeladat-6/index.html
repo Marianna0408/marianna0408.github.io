@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,61 +10,80 @@
 
 <body>
 
-        <div class="container">
-      <header>
-          <img src="img/balaton_header.jpg" alt="Balaton">
-     </header>
+<div class="container">
 
-        <div class="content">
+    <header>
+        <img src="img/balaton_header.jpg" alt="Strandolás a Balatonnál">
+    </header>
 
-            <aside>
-                <nav>
-                    <ul>
-                        <li><a href="#balaton">Balaton</a></li>
-                        <li><a href="#tisza">Tisza-tó</a></li>
-                        <li><a href="#szelidi">Szelidi-Tó</a></li>
-                    </ul>
-                </nav>
+    <div class="content">
 
-                <h3>Kérem töltse ki a jelentkezési űrlapot</h3>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#balaton">Balaton</a></li>
+                    <li><a href="#tisza">Tisza-tó</a></li>
+                    <li><a href="#szelidi">Szelidi-tó</a></li>
+                </ul>
+            </nav>
 
-                <form>
-                    <label for="nev">Név*</label>
-                    <input type="text" id="nev" name="nev" required maxlength="50">
+            <h3>Kérem töltse ki a jelentkezési űrlapot</h3>
 
-                    <label for="email">E-mail cím*</label>
-                    <input type="email" id="email" name="email" required maxlength="50">
+            <form>
 
-                    <label for="telefon">Telefonszám*</label>
-                    <input type="tel" id="telefon" name="telefon" required maxlength="15">
+                <label for="nev">Név *</label>
+                <input type="text" id="nev" name="nev" required maxlength="50" placeholder="Teljes név">
 
-                    <label for="to">Melyik tó érdekli?</label>
-                    <select id="to" name="to">
-                        <option value="balaton">Balaton</option>
-                        <option value="tisza">Tisza-tó</option>
-                        <option value="szelidi">Szelidi-tó</option>
-                    </select>
+                <label for="email">E-mail cím *</label>
+                <input type="email" id="email" name="email" required maxlength="60" placeholder="pelda@email.hu">
 
-                    <label>Milyen szállást keres?</label>
-                    <input type="checkbox" name="szallas" value="hotel">Szálloda<br>
-                    <input type="checkbox" name="szallas" value="apartman">Apartmanház<br>
-                    <input type="checkbox" name="szallas" value="kemping">Kemping
+                <label for="telefon">Telefonszám *</label>
+                <input type="tel" id="telefon" name="telefon" required maxlength="15" placeholder="+36...">
 
-                    <label>Milyen ellátás legyen?</label>
-                    <input type="radio" name="ellatas" value="teljes">Teljes panzió<br>
-                    <input type="radio" name="ellatas" value="fel"> Félpanzió<br>
-                    <input type="radio" name="ellatas" value="reggeli">Csak reggeli<br>
-                    <input type="radio" name="ellatas" value="nem">Nem kérek ellátást
+                <label for="to">Melyik tó érdekli?</label>
+                <select id="to" name="to" required>
+                    <option value="">Válasszon...</option>
+                    <option value="balaton">Balaton</option>
+                    <option value="tisza">Tisza-tó</option>
+                    <option value="szelidi">Szelidi-tó</option>
+                </select>
 
-                    <label for="uzenet">Egyéb üzenet</label>
-                    <textarea id="uzenet" name="uzenet" rows="4" maxlength="300"></textarea>
+                <label>Milyen szállást keres?</label>
 
-                    <button type="submit">Mehet</button>
-                </form>
-            </aside>
+                <input type="checkbox" id="hotel" name="szallas" value="hotel">
+                <label for="hotel">Szálloda</label>
 
-            <main>
-                <section id="balaton">
+                <input type="checkbox" id="apartman" name="szallas" value="apartman">
+                <label for="apartman">Apartmanház</label>
+
+                <input type="checkbox" id="kemping" name="szallas" value="kemping">
+                <label for="kemping">Kemping</label>
+
+                <label>Milyen ellátás legyen? *</label>
+
+                <input type="radio" id="teljes" name="ellatas" value="teljes" required>
+                <label for="teljes">Teljes panzió</label>
+
+                <input type="radio" id="fel" name="ellatas" value="fel">
+                <label for="fel">Félpanzió</label>
+
+                <input type="radio" id="reggeli" name="ellatas" value="reggeli">
+                <label for="reggeli">Csak reggeli</label>
+
+                <input type="radio" id="nem" name="ellatas" value="nem">
+                <label for="nem">Nem kérek ellátást</label>
+
+                <label for="uzenet">Egyéb üzenet</label>
+                <textarea id="uzenet" name="uzenet" rows="4" maxlength="300"></textarea>
+
+                <button type="submit">Mehet</button>
+
+            </form>
+        </aside>
+
+        <main>
+
+            <section id="balaton">
                 <h2>Balaton</h2>
                 <img src="img/balaton.jpg" alt="Balaton">
                 <p>
@@ -80,35 +98,36 @@
                 </p>
             </section>
 
-                <section id="tisza">
-                    <h2>Tisza-tó</h2>
-                    <img src="img/tisza.jpg" alt="Tisza-tó">
-                    <p>
-                        A Tisza-tó Magyarország második legnagyobb tava.
-                        Gazdag élővilága miatt a természetkedvelők kedvence.
-                        Kiváló horgászati lehetőségeket biztosít.
-                        Számos tanösvény található a környéken.
-                        Ideális vízi sportokhoz.
-                        Csendesebb alternatíva a Balatonhoz képest.
-                        A madárvilág rendkívül változatos.
-                        Tökéletes családi kirándulóhely.
-                    </p>
-                </section>
+            <section id="tisza">
+                <h2>Tisza-tó</h2>
+                <img src="img/tisza.jpg" alt="Tisza-tó">
+                <p>
+                    A Tisza-tó Magyarország második legnagyobb tava.
+                    Gazdag élővilága miatt a természetkedvelők kedvence.
+                    Kiváló horgászati lehetőségeket biztosít.
+                    Számos tanösvény található a környéken.
+                    Ideális vízi sportokhoz.
+                    Csendesebb alternatíva a Balatonhoz képest.
+                    A madárvilág rendkívül változatos.
+                    Tökéletes családi kirándulóhely.
+                </p>
+            </section>
 
-                 <section id="szelidi">
-                    <h2>Szelidi-tó</h2>
-                    <img src="img/szelidi.jpg" alt="Szelidi-tó">
-                    <p>
-                        A Szelidi-tó természetes eredetű tó.
-                        Nyugodt környezetet biztosít a pihenéshez.
-                        Vize nyáron kellemes hőmérsékletű.
-                        A strand rendezett és tiszta.
-                        Kempingezésre is van lehetőség.
-                        Gyógyhatású ásványi anyagokat tartalmaz.
-                        Ideális kikapcsolódásra.
-                        A nyugalmat keresők kedvelt úti célja.
-                    </p>
-              </section>
+            <section id="szelidi">
+                <h2>Szelidi-tó</h2>
+                <img src="img/szelidi.jpg" alt="Szelidi-tó">
+                <p>
+                    A Szelidi-tó természetes eredetű tó.
+                    Nyugodt környezetet biztosít a pihenéshez.
+                    Vize nyáron kellemes hőmérsékletű.
+                    A strand rendezett és tiszta.
+                    Kempingezésre is van lehetőség.
+                    Gyógyhatású ásványi anyagokat tartalmaz.
+                    Ideális kikapcsolódásra.
+                    A nyugalmat keresők kedvelt úti célja.
+                </p>
+            </section>
+
         </main>
 
     </div>
