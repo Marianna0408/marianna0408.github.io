@@ -4,16 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zöld Liget Virágbolt</title>
-
     <link rel="stylesheet" href="css/style.css">
-
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body>
 
-<header class="animate__animated animate__fadeInDown">
+<header>
     <h1>🌿 Zöld Liget Virágbolt 🌿</h1>
     <p>Friss virágok minden alkalomra</p>
 </header>
@@ -36,24 +32,31 @@
 </div>
 
 <div class="container">
-
-    <div class="card animate__animated animate__zoomIn">
+    <div class="card">
         <img src="img/virag1.jpg" alt="Rózsacsokor">
         <h3>Rózsacsokor</h3>
-        <p>Elegáns vörös rózsák különleges alkalmakra.</p>
+        <p>Elegáns, friss vörös rózsák gondosan válogatva. Tökéletes ajándék születésnapra, évfordulóra vagy romantikus alkalmakra.</p>
     </div>
 
-    <div class="card animate__animated animate__zoomIn">
+    <div class="card">
         <img src="img/virag2.jpg" alt="Tulipán csokor">
         <h3>Tavaszi tulipán</h3>
-        <p>Vidám, friss tavaszi csokor minden ünnepre.</p>
+        <p>Vidám tavaszi csokor, amely minden otthonba színt és frissességet hoz. Kiváló ajándék vagy dekoráció ünnepi alkalmakra.</p>
     </div>
-
 </div>
 
 <footer>
     © 2026 Zöld Liget Virágbolt
 </footer>
 
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-text"></p>
+    </div>
+</div>
+
+<script src="js/modal.js"></script>
 </body>
 </html>
