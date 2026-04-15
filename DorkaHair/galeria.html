@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Galéria | Dorka Hair</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">DORKA HAIR</a>
+        <nav><ul><li><a href="index.html">Főoldal</a></li><li><a href="rolam.html">Rólam</a></li><li><a href="szolgaltatasok.html">Szolgáltatások</a></li><li><a href="joico.html">Joico</a></li><li><a href="galeria.html" class="active">Galéria</a></li><li><a href="kapcsolat.html">Kapcsolat</a></li></ul></nav>
+    </header>
+
+    <main class="container">
+        <div class="title-center">
+            <h2>Munkáim</h2>
+            <p>Kattints a képekre a nagyításhoz és a lapozáshoz!</p>
+        </div>
+
+        <!-- 18 DARAB KÉP -->
+        <div class="gallery">
+            <img src="img/kesz_munka_01.jpg" alt="Munka 1">
+            <img src="img/kesz_munka_02.jpg" alt="Munka 2">
+            <img src="img/kesz_munka_03.jpg" alt="Munka 3">
+            <img src="img/kesz_munka_04.jpg" alt="Munka 4">
+            <img src="img/kesz_munka_05.jpg" alt="Munka 5">
+            <img src="img/kesz_munka_06.jpg" alt="Munka 6">
+            <img src="img/kesz_munka_07.jpg" alt="Munka 7">
+            <img src="img/kesz_munka_08.jpg" alt="Munka 8">
+            <img src="img/kesz_munka_09.jpg" alt="Munka 9">
+            <img src="img/kesz_munka_10.jpg" alt="Munka 10">
+            <img src="img/kesz_munka_11.jpg" alt="Munka 11">
+            <img src="img/kesz_munka_12.jpg" alt="Munka 12">
+            <img src="img/kesz_munka_13.jpg" alt="Munka 13">
+            <img src="img/kesz_munka_14.jpg" alt="Munka 14">
+            <img src="img/kesz_munka_15.jpg" alt="Munka 15">
+            <img src="img/kesz_munka_16.jpg" alt="Munka 16">
+            <img src="img/kesz_munka_17.jpg" alt="Munka 17">
+            <img src="img/kesz_munka_18.jpg" alt="Munka 18">
+        </div>
+
+        <div class="title-center" style="margin-top: 80px;">
+            <h2>Előtte – Utána</h2>
+            <p>Húzd el a középső vonalat az átalakulás megtekintéséhez!</p>
+        </div>
+
+        <!-- 5 DARAB ELŐTTE-UTÁNA CSÚSZKA -->
+        <div class="ba-wrapper">
+            <!-- 1. pár -->
+            <div class="ba-container">
+                <div class="ba-img" style="background-image: url('img/elotte_01.jpg');"></div>
+                <div class="ba-img ba-after" style="background-image: url('img/utana_01.jpg');"></div>
+                <div class="ba-handle"></div>
+            </div>
+            <!-- 2. pár -->
+            <div class="ba-container">
+                <div class="ba-img" style="background-image: url('img/elotte_02.jpg');"></div>
+                <div class="ba-img ba-after" style="background-image: url('img/utana_02.jpg');"></div>
+                <div class="ba-handle"></div>
+            </div>
+            <!-- 3. pár -->
+            <div class="ba-container">
+                <div class="ba-img" style="background-image: url('img/elotte_03.jpg');"></div>
+                <div class="ba-img ba-after" style="background-image: url('img/utana_03.jpg');"></div>
+                <div class="ba-handle"></div>
+            </div>
+            <!-- 4. pár -->
+            <div class="ba-container">
+                <div class="ba-img" style="background-image: url('img/elotte_04.jpg');"></div>
+                <div class="ba-img ba-after" style="background-image: url('img/utana_04.jpg');"></div>
+                <div class="ba-handle"></div>
+            </div>
+            <!-- 5. pár -->
+            <div class="ba-container">
+                <div class="ba-img" style="background-image: url('img/elotte_05.jpg');"></div>
+                <div class="ba-img ba-after" style="background-image: url('img/utana_05.jpg');"></div>
+                <div class="ba-handle"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- LIGHTBOX MODAL -->
+    <div id="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <span class="nav-lightbox prev-lightbox" onclick="changeImg(-1)">&#10094;</span>
+        <img src="" alt="Nagyított kép" id="lightbox-img">
+        <span class="nav-lightbox next-lightbox" onclick="changeImg(1)">&#10095;</span>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
